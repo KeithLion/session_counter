@@ -18,7 +18,6 @@ def add():
     session['count'] += 1
     return redirect('/')
 
-
 @app.route('/reset')
 def reset():
     session.clear()
