@@ -13,7 +13,10 @@ def counter():
     return render_template('counter.html')
 
 
-
+@app.route('/add2', methods=['post'])
+def add():
+    session['count'] += 1
+    return redirect('/')
 
 
 @app.route('/reset')
