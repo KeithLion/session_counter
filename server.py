@@ -10,7 +10,7 @@ def counter():
         session['count'] = 0
     else:
         session['count'] += 1
-        return render_template('count.html')
+    return render_template('count.html')
 
 
 @app.route('/add2', method=['post'])
